@@ -119,6 +119,7 @@
           return d.rate + "%"
         });
 
+      // 州を区切る線
       svg.append("path")
         .datum(topojson.mesh(us,us.objects.states, (a,b) => {
           return a !== b;
